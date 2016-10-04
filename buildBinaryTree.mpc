@@ -1,0 +1,30 @@
+// $Id: BinaryTree.mpc anahapet $
+
+project (assignment3) {
+  exename = buildBinaryTree
+  install = .
+ 
+  Header_Files {
+	binarytree.h
+	hash.h
+  	LinkedList.h
+	HashNode.h
+	binarytreenode.h
+  }
+
+  Source_Files {
+    binarytree.cpp
+	binarytreenode.cpp
+	hash.cpp
+	LinkedList.cpp
+	HashNode.cpp
+	main.cpp
+  }
+
+
+
+
+specific (make) {
+compile_flags += -std=c++0x
+}
+}
